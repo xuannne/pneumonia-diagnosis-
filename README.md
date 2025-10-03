@@ -15,3 +15,45 @@ So sánh hiệu quả giữa CNN, SVM và KNN.
 Ứng dụng Grad-CAM để giải thích kết quả dự đoán.
 
 Đề xuất hướng ứng dụng thực tiễn trong y tế.
+
+🗂️ Dữ liệu
+
+Bộ dữ liệu: Chest X-Ray Images (Pneumonia) (Kaggle).
+
+Gồm 2 lớp:
+
+Normal: Phổi bình thường.
+
+Pneumonia: Bệnh nhân viêm phổi.
+
+Link dataset: Kaggle - Chest X-Ray Pneumonia
+
+⚙️ Phương pháp
+
+Tiền xử lý dữ liệu:
+
+Resize ảnh về kích thước cố định (224×224).
+
+Chuẩn hóa giá trị pixel [0,1].
+
+Augmentation: xoay, lật, dịch chuyển.
+
+Các mô hình áp dụng:
+
+SVM và KNN: dùng đặc trưng trích xuất từ ảnh.
+
+CNN: huấn luyện trực tiếp trên ảnh, tự động trích xuất đặc trưng.
+
+Đánh giá mô hình:
+
+Accuracy (Độ chính xác).
+
+Sensitivity (Độ nhạy).
+
+Specificity (Độ đặc hiệu).
+
+Giải thích mô hình với Grad-CAM:
+
+Sinh heatmap làm nổi bật vùng phổi bất thường.
+
+Giúp bác sĩ kiểm chứng dự đoán.
